@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>iOS on Moy&#39;s Blog</title>
+        <link>https://demo.stack.jimmycai.com/tags/ios/</link>
+        <description>Recent content in iOS on Moy&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 19 Jan 2024 00:56:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/ios/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>如何在 iOS 上快速创建带有模板的md文档</title>
+        <link>https://demo.stack.jimmycai.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-ios-%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E5%B8%A6%E6%9C%89%E6%A8%A1%E6%9D%BF%E7%9A%84md%E6%96%87%E6%A1%A3/</link>
+        <pubDate>Fri, 19 Jan 2024 00:56:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-ios-%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E5%B8%A6%E6%9C%89%E6%A8%A1%E6%9D%BF%E7%9A%84md%E6%96%87%E6%A1%A3/</guid>
+        <description>&lt;h1 id=&#34;ios快捷创建模板化md文档的方式&#34;&gt;iOS快捷创建模板化md文档的方式&lt;/h1&gt;
+&lt;h2 id=&#34;前情&#34;&gt;前情&lt;/h2&gt;
+&lt;p&gt;如 &lt;span title=&#34;某个私人页面&#34;&gt;████&lt;/span&gt; 所说，终于开始使用 Git 进行 Obsidian 的同步了！&lt;/p&gt;
+&lt;p&gt;与此同时，使用 &lt;strong&gt;Working Copy&lt;/strong&gt; 进行 Github 的仓库同步，然后用 &lt;strong&gt;MWeb&lt;/strong&gt; 进行文档的编辑和查看。&lt;br&gt;
+关于 App 的选择，详见：&lt;span title=&#34;某个私人页面&#34;&gt;████&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;为什么不用 Obsidian 原生 iOS 应用呢？&lt;br&gt;
+——因为 Ob 的原生应用不支持访问外部文件夹，反而没法和 WorkingCopy 同步下来的文件进行交互。&lt;br&gt;
+（而我不舍得订阅 Obsidian 官方 Sync 服务x）&lt;/p&gt;
+&lt;h2 id=&#34;我的需求&#34;&gt;我的需求&lt;/h2&gt;
+&lt;p&gt;总之，既然千辛万苦解决了 iOS 端的同步问题，那当然是想在手机上能够方便地查看和添加文件的。&lt;/p&gt;
+&lt;p&gt;查看目前没啥问题，用 MWeb 就能搞定。&lt;br&gt;
+添加的话……&lt;br&gt;
+虽说也可以用“新建文件”的方式，但是那样和我自己的&lt;strong&gt;工作流&lt;/strong&gt;非常不同意。&lt;/p&gt;
+&lt;p&gt;举个例子，我的&lt;strong&gt;Zettelkasten&lt;/strong&gt;卡片盒文件夹，专门用来收集一些零散的信息。&lt;/p&gt;
+&lt;p&gt;它需要创建在 &lt;code&gt;Obsinote/Zettelkasten/年份-月份/日期前缀_笔记名称.md&lt;/code&gt; 的路径下。&lt;br&gt;
+举个例子，今天是2024年1月9日，我想要添加一个叫做“iOS快捷创建模板化md文档的方式”的笔记，那它应该存在这个路径下：&lt;br&gt;
+&lt;code&gt;Obsinote/Zettelkasten/2024-01/240109_iOS快捷创建模板化md文档的方式.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;整体结构如图：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-ios-%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E5%B8%A6%E6%9C%89%E6%A8%A1%E6%9D%BF%E7%9A%84md%E6%96%87%E6%A1%A3/Assets/240119_iOS%E5%BF%AB%E6%8D%B7%E5%88%9B%E5%BB%BA%E6%A8%A1%E6%9D%BF%E5%8C%96md%E6%96%87%E6%A1%A3%E7%9A%84%E6%96%B9%E5%BC%8F-img-1.png&#34;
+	width=&#34;568&#34;
+	height=&#34;546&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;104&#34;
+		data-flex-basis=&#34;249px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;与此同时，文件内应该自动添加这样的 frontmatter 属性：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;title&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;{&lt;span class=&#34;l&#34;&gt;笔记标题}  &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;description&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;date&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;{&lt;span class=&#34;l&#34;&gt;创建日期}  &lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;lastmod&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;tags&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;aliases&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;   
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nn&#34;&gt;---&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这一系列模板化的、和当前日期绑定的文本内容，靠自己手填显然是不现实的……&lt;/p&gt;
+&lt;p&gt;所以我们需要——自动化！&lt;/p&gt;
+&lt;h2 id=&#34;快捷指令登场&#34;&gt;快捷指令，登场&lt;/h2&gt;
+&lt;p&gt;在现如今的 iOS 上玩自动化，第一时间想到的当然是官方的 &lt;strong&gt;快捷指令（Shortcuts）&lt;/strong&gt;。&lt;br&gt;
+&lt;em&gt;正如在 PC 端第一时间想到是 Quicker！&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;保存文本文件&#34;&gt;保存文本文件&lt;/h3&gt;
+&lt;p&gt;首先尝试了一下“创建文件”，是可以的。&lt;/p&gt;
+&lt;p&gt;具体方法就是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添加一个「文本」节点&lt;/li&gt;
+&lt;li&gt;用「保存文件」节点，将文本内容储存到指定位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;看上去一切顺利，不过有一个问题：&lt;br&gt;
+不管我怎么指定文件的后缀名，它都会存成 &lt;code&gt;.txt&lt;/code&gt; 文件，而不是我希望的 &lt;code&gt;.md&lt;/code&gt; 文件。&lt;/p&gt;
+&lt;p&gt;经过一番调查，发现应该用「更改名称」节点，变成这样的流程：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添加「文本」节点&lt;/li&gt;
+&lt;li&gt;用「更改名称」节点将文本的名称修改成「xxx.md」&lt;/li&gt;
+&lt;li&gt;用「保存文件」去储存「更改名称后的项目」&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;只有用这种方法才能存下 &lt;em&gt;非txt格式&lt;/em&gt; 的文本文件！&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;格式化内容&#34;&gt;格式化内容&lt;/h3&gt;
+&lt;p&gt;第一部分：日期&lt;br&gt;
+这个倒是比较容易，变量填空里自带一个 &lt;strong&gt;当前日期&lt;/strong&gt; 的变量。&lt;br&gt;
+添加之后点击一下，格式修改为 &lt;strong&gt;自定义&lt;/strong&gt;，然后按照自己希望的日期格式填写就好了。&lt;/p&gt;
+&lt;p&gt;比如我的文件夹路径是：&lt;code&gt;Zettelkasten/yyyy-MM&lt;/code&gt;&lt;br&gt;
+文件名前缀则是：&lt;code&gt;yyMMdd_&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;第二部分 frontmatter 元数据也很简单，直接填写在「文本」节点内部就好。&lt;br&gt;
+&lt;em&gt;记得在 &lt;code&gt;属性:&lt;/code&gt; 后面需要有一个空格！&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;用户输入&#34;&gt;用户输入&lt;/h3&gt;
+&lt;p&gt;最后，添加两个用户输入，分别获得笔记的名称和内容，拼合在一起就大功告成啦！&lt;/p&gt;
+&lt;p&gt;文件储存完后还可以加一个 WorkingCopy 的节点，直接在软件内显示这个新创建的笔记，方便快速编辑。&lt;br&gt;
+（可惜 MWeb 好像不支持快捷指令……）&lt;/p&gt;
+&lt;p&gt;最后的结果如下：&lt;br&gt;
+第一部分：获取用户输入，并填写基本的模板&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-ios-%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E5%B8%A6%E6%9C%89%E6%A8%A1%E6%9D%BF%E7%9A%84md%E6%96%87%E6%A1%A3/Assets/17055971134422.png&#34;
+	width=&#34;1179&#34;
+	height=&#34;2556&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;110px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;第二部分：保存到指定位置并打开&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E5%A6%82%E4%BD%95%E5%9C%A8-ios-%E4%B8%8A%E5%BF%AB%E9%80%9F%E5%88%9B%E5%BB%BA%E5%B8%A6%E6%9C%89%E6%A8%A1%E6%9D%BF%E7%9A%84md%E6%96%87%E6%A1%A3/Assets/17055971135975.png&#34;
+	width=&#34;931&#34;
+	height=&#34;2019&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;46&#34;
+		data-flex-basis=&#34;110px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;你也可以直接下载我分享的快捷指令：&lt;/p&gt;
+&lt;p&gt;——以上！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

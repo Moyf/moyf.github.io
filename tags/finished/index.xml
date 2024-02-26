@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Finished on Moy&#39;s Blog</title>
+        <link>https://demo.stack.jimmycai.com/tags/finished/</link>
+        <description>Recent content in Finished on Moy&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 02 Jan 2024 19:57:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/finished/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>使用 Snipaste 截出圆角矩形带阴影的截图</title>
+        <link>https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/</link>
+        <pubDate>Tue, 02 Jan 2024 19:57:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/</guid>
+        <description>&lt;h1 id=&#34;使用-snipaste-截出圆角矩形带阴影的截图&#34;&gt;使用 Snipaste 截出圆角矩形带阴影的截图&lt;/h1&gt;
+&lt;h2 id=&#34;跑题但有效使用-sharex-做出带圆角阴影和底色的截图&#34;&gt;跑题但有效：使用 ShareX 做出带圆角阴影和底色的截图&lt;/h2&gt;
+&lt;p&gt;详见：&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/&#34; &gt;231228_使用 ShareX 做出带各种效果的截图&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+&lt;p&gt;是在之前一个帖子里看到的效果。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;Zettelkasten/2023-12/231226_Dynamic%20Highlights%20%e6%97%b6%e9%97%b4%e5%92%8c%e7%94%a8%e6%97%b6%e6%95%b0%e5%ad%97%e5%8f%98%e8%89%b2.md#%5ec3u213&#34; &gt;231226_Dynamic Highlights 时间和用时数字变色&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一开始的研究：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Snipaste/feedback/issues/1510&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;请求自动添加阴影和窗口圆角 · Issue #1510 · Snipaste/feedback&lt;/a&gt; 来看，还不支持。有个叫 &lt;strong&gt;iShot&lt;/strong&gt; 的看起来能支持。&lt;br&gt;
+等下，是支持的！&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226175216.png&#34;
+	width=&#34;534&#34;
+	height=&#34;167&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;319&#34;
+		data-flex-basis=&#34;767px&#34;
+	
+&gt;&lt;br&gt;
+截图窗口左上角能加一个选项。&lt;/p&gt;
+&lt;p&gt;然后 &lt;strong&gt;WinSnap&lt;/strong&gt; 支持阴影但是不支持圆角矩形。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;顺便，看到这个页面：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://utgd.net/article/20238&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;用 Shortcuts 给窗口截图加边框 - #UNTAG&lt;/a&gt;&lt;br&gt;
+很漂亮的个人博客！ ^b2t9zp&lt;br&gt;
+（其实不是博客，应该算是一种少数派 Alter 的工具资讯站）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_20-07-10.png&#34;
+	width=&#34;1433&#34;
+	height=&#34;1272&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;404&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;112&#34;
+		data-flex-basis=&#34;270px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;重要的是这个页面不仅好看而且实用！&lt;br&gt;
+提到了 Shortcuts 快捷指令的使用，以及「填充边框」这样来避免版透明色带来的体积问题。&lt;/p&gt;
+&lt;h3 id=&#34;snipaste-里如何实现呢&#34;&gt;Snipaste 里如何实现呢？&lt;/h3&gt;
+&lt;p&gt;在截图的这里，点击，更改成圆角（快捷键 &lt;code&gt;U&lt;/code&gt; ）：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_17-59-56.png&#34;
+	width=&#34;696&#34;
+	height=&#34;428&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后工具栏这里，勾选阴影：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-00-41.png&#34;
+	width=&#34;696&#34;
+	height=&#34;428&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;注意还有一点&#34;&gt;注意：还有一点！&lt;/h3&gt;
+&lt;p&gt;设置里最好勾选这个「复制图像为文件」：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-01-46.png&#34;
+	width=&#34;511&#34;
+	height=&#34;256&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;479px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;不然直接作为图片格式可能会变成下面这个丑模样：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226180036.png&#34;
+	width=&#34;696&#34;
+	height=&#34;428&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;大概是因为透明通道的问题&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;副作用粘贴进-obsidian-的文件命名&#34;&gt;副作用：粘贴进 Obsidian 的文件命名&lt;/h4&gt;
+&lt;p&gt;由于是文件，所以粘贴进 Ob 的时候命名会是文件名：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226195001.png&#34;
+	width=&#34;503&#34;
+	height=&#34;407&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;——也就是说，这时候 Snipaste 的命名配置就会有用了！&lt;/p&gt;
+&lt;h3 id=&#34;自动化一点呢&#34;&gt;自动化一点呢？&lt;/h3&gt;
+&lt;p&gt;现在可以用 &lt;code&gt;U&lt;/code&gt; 快速切换圆角，但是阴影选项还要手动切换，有点麻烦。&lt;br&gt;
+包括&lt;strong&gt;复制为文件&lt;/strong&gt;也要用 &lt;code&gt;Ctrl+Alt+C&lt;/code&gt; 来完成。&lt;/p&gt;
+&lt;p&gt;能更方便吗？&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.snipaste.com/zh-cn/command-line-options&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;命令行选项 - Snipaste&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;结合 &lt;strong&gt;&lt;code&gt;--shadow&lt;/code&gt;&lt;/strong&gt; 获取带阴影截图；结合 &lt;strong&gt;&lt;code&gt;--no-shadow&lt;/code&gt;&lt;/strong&gt; 获取不带阴影截图。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这样的话，可以用命令行截图来&lt;strong&gt;强制带阴影&lt;/strong&gt;，第二部也搞定。&lt;/p&gt;
+&lt;p&gt;如： &lt;code&gt;snip -o file-dialog;clipboard&lt;/code&gt; 会在截屏选区确定后自动复制截图，并弹出文件保存对话框。&lt;/p&gt;
+&lt;p&gt;那我们可以：&lt;br&gt;
+&lt;code&gt;snip --shadow -o clipboard&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后在这里进行自定义：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-13-01.png&#34;
+	width=&#34;1140&#34;
+	height=&#34;569&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;480px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226181329.png&#34;
+	width=&#34;370&#34;
+	height=&#34;260&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;142&#34;
+		data-flex-basis=&#34;341px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Nahh 不行，阴影会加上，但不是作为文件保存的。&lt;br&gt;
+是不是可以用 &lt;code&gt;-o exec&lt;/code&gt; 来保存文件并复制？&lt;br&gt;
+或者就干脆把 &lt;a class=&#34;link&#34; href=&#34;#%e6%b3%a8%e6%84%8f%ef%bc%9a%e8%bf%98%e6%9c%89%e4%b8%80%e7%82%b9%ef%bc%81&#34; &gt;注意：还有一点！&lt;/a&gt; 里的设置变成默认开好叻。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-15-42.png&#34;
+	width=&#34;587&#34;
+	height=&#34;401&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;OK，这样可以咯。&lt;/p&gt;
+&lt;p&gt;分配了一个快捷键：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-16-03.png&#34;
+	width=&#34;511&#34;
+	height=&#34;537&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;95&#34;
+		data-flex-basis=&#34;228px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这样常态是普通的截图（直角矩形无阴影），用这个特殊的「带截图阴影」则是截取美观截图（圆角矩形带阴影）。&lt;/p&gt;
+&lt;p&gt;Finish！&lt;/p&gt;
+&lt;p&gt;🤔 可惜直角矩形和圆角矩形的切换好像还不能在命令行和里……&lt;br&gt;
+这个倒是因为有快捷键可以配合 QK 自动化；或者也可以提 FR 试试。&lt;/p&gt;
+&lt;p&gt;主要是频率可能不高，就先这样吧，到此为止！&lt;/p&gt;
+&lt;p&gt;（总之还是提了个 Issue： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Snipaste/feedback/issues/2810&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[FR] 命令行添加参数：指定圆角矩形截图、作为文件输出 · Issue #2810 · Snipaste/feedback&lt;/a&gt; ）&lt;/p&gt;
+&lt;p&gt;#EOF&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

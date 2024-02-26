@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>编程 on Moy&#39;s Blog</title>
+        <link>https://demo.stack.jimmycai.com/tags/%E7%BC%96%E7%A8%8B/</link>
+        <description>Recent content in 编程 on Moy&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 20 Dec 2023 18:28:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Rider 的两则小知识</title>
+        <link>https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/</link>
+        <pubDate>Wed, 20 Dec 2023 18:28:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/</guid>
+        <description>&lt;h1 id=&#34;rider-的两则小知识&#34;&gt;Rider 的两则小知识&lt;/h1&gt;
+&lt;h2 id=&#34;symbol-search-符号查询&#34;&gt;Symbol Search 符号查询&lt;/h2&gt;
+&lt;p&gt;使用默认的搜索框，哪怕设置了 Filter，&lt;br&gt;
+还是会给出一大堆的无关选项。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/Assets/20231218_161622_233_copy.png&#34;
+	width=&#34;898&#34;
+	height=&#34;196&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;458&#34;
+		data-flex-basis=&#34;1099px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这个时候就应该用 &lt;code&gt;Alt+\&lt;/code&gt; 来查找函数啥的：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/Assets/Pasted-image-20231218161730.png&#34;
+	width=&#34;695&#34;
+	height=&#34;111&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;626&#34;
+		data-flex-basis=&#34;1502px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这个是限定范围的，&lt;br&gt;
+好用很多！&lt;/p&gt;
+&lt;h2 id=&#34;fast-surround-快速包裹&#34;&gt;Fast Surround 快速包裹&lt;/h2&gt;
+&lt;p&gt;有时候会经常需要把比如 &lt;code&gt;UAkSwitchValue&lt;/code&gt; 转成 &lt;code&gt;TStrongObjectPtr&amp;lt;UAkSwitchValue&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这时候可以用 &lt;a class=&#34;link&#34; href=&#34;https://www.jetbrains.com/help/rider/Templates__Applying_Templates__Creating_Source_Code_Using_Live_Templates.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Live Template&lt;/a&gt; 功能：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/Assets/Pasted-image-20231218161946.png&#34;
+	width=&#34;984&#34;
+	height=&#34;701&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;336px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$SELECTION$&lt;/code&gt; 代表选中的文本，&lt;br&gt;
+&lt;code&gt;$END$&lt;/code&gt; 代表插入之后的结尾放哪儿。&lt;/p&gt;
+&lt;p&gt;注意右边有个 &lt;code&gt;Mnemonic&lt;/code&gt; 速记符，是在这个时候用的：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/Assets/Pasted-image-20231218201007.png&#34;
+	width=&#34;302&#34;
+	height=&#34;199&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;364px&#34;
+	
+&gt;&lt;br&gt;
+唤出的方法：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/Assets/Pasted-image-20231218201038.png&#34;
+	width=&#34;898&#34;
+	height=&#34;247&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;363&#34;
+		data-flex-basis=&#34;872px&#34;
+	
+&gt;&lt;br&gt;
+可以用快捷键 &lt;code&gt;Ctrl+E, U&lt;/code&gt; 来快速唤出。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;在右键的 Contextural Menu 可以显示，但这样太麻烦了。&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/rider-%E7%9A%84%E4%B8%A4%E5%88%99%E5%B0%8F%E7%9F%A5%E8%AF%86/Assets/Pasted-image-20231218162128.png&#34;
+	width=&#34;537&#34;
+	height=&#34;290&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;444px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

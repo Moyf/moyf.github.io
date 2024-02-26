@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>工具流 on Moy&#39;s Blog</title>
+        <link>https://demo.stack.jimmycai.com/tags/%E5%B7%A5%E5%85%B7%E6%B5%81/</link>
+        <description>Recent content in 工具流 on Moy&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 14 Jan 2024 00:17:00 +0000</lastBuildDate><atom:link href="https://demo.stack.jimmycai.com/tags/%E5%B7%A5%E5%85%B7%E6%B5%81/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>使用 ShareX 做出带各种效果的截图</title>
+        <link>https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/</link>
+        <pubDate>Sun, 14 Jan 2024 00:17:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/</guid>
+        <description>&lt;h1 id=&#34;使用-sharex-做出带各种效果的截图&#34;&gt;使用 ShareX 做出带各种效果的截图&lt;/h1&gt;
+&lt;p&gt;&lt;style type=&#34;text/css&#34;&gt;.notice{--root-color:#444;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#c33;--warning-content:#fee;--info-title:#fb7;--info-content:#fec;--note-title:#6be;--note-content:#e7f2fa;--tip-title:#5a5;--tip-content:#efe}@media (prefers-color-scheme:dark){.notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}}body.dark .notice{--root-color:#ddd;--root-background:#eff;--title-color:#fff;--title-background:#7bd;--warning-title:#800;--warning-content:#400;--info-title:#a50;--info-content:#420;--note-title:#069;--note-content:#023;--tip-title:#363;--tip-content:#121}.notice{padding:18px;line-height:24px;margin-bottom:24px;border-radius:4px;color:var(--root-color);background:var(--root-background)}.notice p:last-child{margin-bottom:0}.notice-title{margin:-18px -18px 12px;padding:4px 18px;border-radius:4px 4px 0 0;font-weight:700;color:var(--title-color);background:var(--title-background)}.notice.warning .notice-title{background:var(--warning-title)}.notice.warning{background:var(--warning-content)}.notice.info .notice-title{background:var(--info-title)}.notice.info{background:var(--info-content)}.notice.note .notice-title{background:var(--note-title)}.notice.note{background:var(--note-content)}.notice.tip .notice-title{background:var(--tip-title)}.notice.tip{background:var(--tip-content)}.icon-notice{display:inline-flex;align-self:center;margin-right:8px}.icon-notice img,.icon-notice svg{height:1em;width:1em;fill:currentColor}.icon-notice img,.icon-notice.baseline svg{top:.125em;position:relative}&lt;/style&gt;
+&lt;div&gt;&lt;svg width=&#34;0&#34; height=&#34;0&#34; display=&#34;none&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;&lt;symbol id=&#34;tip-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;note-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zm-248 50c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;warning-notice&#34; viewBox=&#34;0 0 576 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z&#34;/&gt;&lt;/symbol&gt;&lt;symbol id=&#34;info-notice&#34; viewBox=&#34;0 0 512 512&#34; preserveAspectRatio=&#34;xMidYMid meet&#34;&gt;&lt;path d=&#34;M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z&#34;/&gt;&lt;/symbol&gt;&lt;/svg&gt;&lt;/div&gt;&lt;div class=&#34;notice note&#34; &gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;#note-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;注释&lt;/p&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2023.12.26 使用 Snipaste 截出圆角矩形带阴影的截图&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+&lt;br&gt;
+根据下面 &lt;a class=&#34;link&#34; href=&#34;%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2/TIL/2023.12.26%20%e4%bd%bf%e7%94%a8%20Snipaste%20%e6%88%aa%e5%87%ba%e5%9c%86%e8%a7%92%e7%9f%a9%e5%bd%a2%e5%b8%a6%e9%98%b4%e5%bd%b1%e7%9a%84%e6%88%aa%e5%9b%be.md#%5eb2t9zp&#34; &gt;Untag&lt;/a&gt; 的页面，感觉带底色的截图也挺好看的！&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231227161158.png&#34;
+	width=&#34;2154&#34;
+	height=&#34;1792&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;120&#34;
+		data-flex-basis=&#34;288px&#34;
+	
+&gt;&lt;br&gt;
+尝试实现一下看看。&lt;/p&gt;
+&lt;p&gt;ShareX 有一个功能是截图后自动增加特效/水印：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-27_16-04-40.png&#34;
+	width=&#34;492&#34;
+	height=&#34;301&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;163&#34;
+		data-flex-basis=&#34;392px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在任务设置里可以进行配置：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-27_16-05-07.png&#34;
+	width=&#34;818&#34;
+	height=&#34;536&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;152&#34;
+		data-flex-basis=&#34;366px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;对于&lt;strong&gt;添加背景&lt;/strong&gt;，可以用这几个步骤：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-27_16-05-24.png&#34;
+	width=&#34;1003&#34;
+	height=&#34;558&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;431px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rounded Corners：8&lt;/li&gt;
+&lt;li&gt;Shadow：
+&lt;ul&gt;
+&lt;li&gt;Opacity 0.6&lt;/li&gt;
+&lt;li&gt;Size 12&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Canvas：10 （用来向外拓展画布）&lt;/li&gt;
+&lt;li&gt;Background：填充底色&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;配置代码如下，可以用左下角按钮直接导入。&lt;em&gt;（新版不支持剪贴板导入了）&lt;/em&gt;&lt;br&gt;
+&lt;div class=&#34;notice note&#34; &gt;
+&lt;p class=&#34;first notice-title&#34;&gt;&lt;span class=&#34;icon-notice baseline&#34;&gt;&lt;svg&gt;&lt;use href=&#34;#note-notice&#34;&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/span&gt;注释&lt;/p&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;18
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;19
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;20
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;21
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;22
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;23
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;24
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;25
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;26
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;27
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;28
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;29
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;30
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;31
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;32
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;33
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;34
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;35
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;36
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;37
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;38
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;39
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;40
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;41
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;42
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;43
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;44
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;45
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;46
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;47
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;48
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;49
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;50
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;51
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;52
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;53
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;54
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;55
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;Name&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;添加背景&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;Effects&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;$type&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;ShareX.ImageEffectsLib.RoundedCorners, ShareX.ImageEffectsLib&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;CornerRadius&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Enabled&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;$type&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;ShareX.ImageEffectsLib.Shadow, ShareX.ImageEffectsLib&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Opacity&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Size&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;12&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Darkness&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Black&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Offset&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;0, 0&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Enabled&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;$type&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;ShareX.ImageEffectsLib.Canvas, ShareX.ImageEffectsLib&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Margin&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;10, 10, 10, 10&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Transparent&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Enabled&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;$type&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;ShareX.ImageEffectsLib.DrawBackground, ShareX.ImageEffectsLib&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;252, 224, 76&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;UseGradient&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;GradientType&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Vertical&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color2&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;White&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;UseCustomGradient&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Gradient&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;Type&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;Vertical&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;nt&#34;&gt;&amp;#34;Colors&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;68, 120, 194&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Location&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.0&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;13, 58, 122&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Location&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;50.0&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;6, 36, 78&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Location&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;50.0&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Color&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;23, 89, 174&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;nt&#34;&gt;&amp;#34;Location&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;100.0&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;          &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;p&#34;&gt;},&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;      &lt;span class=&#34;nt&#34;&gt;&amp;#34;Enabled&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;  
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;
+&lt;br&gt;
+利用这个后处理就可以方便地截取出这种样式的图片了！&lt;/p&gt;
+&lt;h3 id=&#34;新版特效库&#34;&gt;新版特效库&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;现在 v15.0 直接变成 &lt;code&gt;sxie&lt;/code&gt; 文件了，不过不影响，内核还是那个 config.json&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;保存方式变成了点击「打包器」然后存成 sxie 文件。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231227163322.png&#34;
+	width=&#34;991&#34;
+	height=&#34;437&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;226&#34;
+		data-flex-basis=&#34;544px&#34;
+	
+&gt;&lt;br&gt;
+如果是绿色版，可以通过 &lt;strong&gt;把 sxie 文件拖入这个窗口&lt;/strong&gt; 来安装其他的特效。&lt;/p&gt;
+&lt;p&gt;官方推出了图像效果预设库：&lt;a class=&#34;link&#34; href=&#34;https://getsharex.com/image-effects&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Image effects - ShareX&lt;/a&gt;&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-27_16-29-08.png&#34;
+	width=&#34;1172&#34;
+	height=&#34;426&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;275&#34;
+		data-flex-basis=&#34;660px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;搞笑特效&#34;&gt;搞笑特效&lt;/h3&gt;
+&lt;p&gt;有一个特效是在截图上加一根假的头发：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231227164214.png&#34;
+	width=&#34;545&#34;
+	height=&#34;393&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;138&#34;
+		data-flex-basis=&#34;332px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;好好笑，草。别说，做的还挺像真的！&lt;/p&gt;
+&lt;h3 id=&#34;多区域模式&#34;&gt;多区域模式&lt;/h3&gt;
+&lt;p&gt;Tips：在截图选项里开启 &lt;strong&gt;多区域模式&lt;/strong&gt; 之后：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231227230912.png&#34;
+	width=&#34;707&#34;
+	height=&#34;592&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;119&#34;
+		data-flex-basis=&#34;286px&#34;
+	
+&gt;&lt;br&gt;
+就不会一键直接截图，而是可以反复调整具体尺寸了（和 Snipaste 保持一致）；&lt;br&gt;
+而且可以把截取的多个图像直接拼贴在一起。&lt;/p&gt;
+&lt;p&gt;可惜不能对每张都加圆角矩形，嗐。&lt;/p&gt;
+&lt;h2 id=&#34;图片体积&#34;&gt;图片体积&lt;/h2&gt;
+&lt;h4 id=&#34;压缩成其他格式&#34;&gt;压缩成其他格式&lt;/h4&gt;
+&lt;p&gt;有两个外部方案：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://krau.top/posts/use-sharex-and-mdimage-for-efficiency&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;使用ShareX和Markdown Image自动压缩截图为WebP格式并一键插入Markdown文档 - 柯罗krau的博客 | krau&amp;rsquo;s blog&lt;/a&gt; 这个添加了一个 ShareX 动作去快速转换 webp 格式并复制。&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/msedge_186_182612.jpg&#34;
+	width=&#34;1092&#34;
+	height=&#34;1089&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.uzz5.com/post/j9hs.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Sharex 截图压缩并转换成 webp格式 | 悠哉哉&lt;/a&gt; 这个依赖了 ImageMagick 去二次压缩。&lt;/p&gt;
+&lt;h4 id=&#34;png-和-jpg-的对比&#34;&gt;png 和 jpg 的对比&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/explorer_184_181707.jpg&#34;
+	width=&#34;291&#34;
+	height=&#34;201&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;同样的图片大小（592x645）&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;144&#34;
+		data-flex-basis=&#34;347px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;png 格式：526 KB&lt;br&gt;
+jpg 格式：80 KB&lt;br&gt;
+体积相差了 6.5 倍……唔，还是用 jpg + 纯色背景吧！&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;顺便，用 Snipaste 截图了同样大小的图片，575 KB，差不多呢……&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;可以在这里设置截图的格式：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Obsidian_185_181839.jpg&#34;
+	width=&#34;842&#34;
+	height=&#34;599&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;webp-呢&#34;&gt;Webp 呢？&lt;/h3&gt;
+&lt;p&gt;支持吗——&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/thumbnail_large.webp&#34;
+	width=&#34;550&#34;
+	height=&#34;550&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;300&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;噢，是支持的！&lt;br&gt;
+那其实尝试用 Webp 也说不定可以。&lt;/p&gt;
+&lt;p&gt;从这张 Logo 来看，体积大概是 png 的 1/3。&lt;br&gt;
+（那其实还是 jpg 更小噢）&lt;/p&gt;
+&lt;h2 id=&#34;文件命名&#34;&gt;文件命名&lt;/h2&gt;
+&lt;p&gt;在这里设置：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/ShareX_188_182838.jpg&#34;
+	width=&#34;842&#34;
+	height=&#34;599&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;140&#34;
+		data-flex-basis=&#34;337px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;在使用 ShareX &lt;strong&gt;作为文件粘贴&lt;/strong&gt; 的时候，会保留文件名，这个时候命名是有效的。&lt;/p&gt;
+&lt;p&gt;否则，会按照图片来自动重命名。&lt;/p&gt;
+&lt;p&gt;如果想设置重命名格式的话，可以参考 &lt;span title=&#34;某个私人页面&#34;&gt;████&lt;/span&gt; 部分。&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>使用 Snipaste 截出圆角矩形带阴影的截图</title>
+        <link>https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/</link>
+        <pubDate>Tue, 02 Jan 2024 19:57:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/</guid>
+        <description>&lt;h1 id=&#34;使用-snipaste-截出圆角矩形带阴影的截图&#34;&gt;使用 Snipaste 截出圆角矩形带阴影的截图&lt;/h1&gt;
+&lt;h2 id=&#34;跑题但有效使用-sharex-做出带圆角阴影和底色的截图&#34;&gt;跑题但有效：使用 ShareX 做出带圆角阴影和底色的截图&lt;/h2&gt;
+&lt;p&gt;详见：&lt;a class=&#34;link&#34; href=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-sharex-%E5%81%9A%E5%87%BA%E5%B8%A6%E5%90%84%E7%A7%8D%E6%95%88%E6%9E%9C%E7%9A%84%E6%88%AA%E5%9B%BE/&#34; &gt;231228_使用 ShareX 做出带各种效果的截图&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+&lt;p&gt;是在之前一个帖子里看到的效果。&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;Zettelkasten/2023-12/231226_Dynamic%20Highlights%20%e6%97%b6%e9%97%b4%e5%92%8c%e7%94%a8%e6%97%b6%e6%95%b0%e5%ad%97%e5%8f%98%e8%89%b2.md#%5ec3u213&#34; &gt;231226_Dynamic Highlights 时间和用时数字变色&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;一开始的研究：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从 &lt;a class=&#34;link&#34; href=&#34;https://github.com/Snipaste/feedback/issues/1510&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;请求自动添加阴影和窗口圆角 · Issue #1510 · Snipaste/feedback&lt;/a&gt; 来看，还不支持。有个叫 &lt;strong&gt;iShot&lt;/strong&gt; 的看起来能支持。&lt;br&gt;
+等下，是支持的！&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226175216.png&#34;
+	width=&#34;534&#34;
+	height=&#34;167&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;319&#34;
+		data-flex-basis=&#34;767px&#34;
+	
+&gt;&lt;br&gt;
+截图窗口左上角能加一个选项。&lt;/p&gt;
+&lt;p&gt;然后 &lt;strong&gt;WinSnap&lt;/strong&gt; 支持阴影但是不支持圆角矩形。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;顺便，看到这个页面：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://utgd.net/article/20238&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;用 Shortcuts 给窗口截图加边框 - #UNTAG&lt;/a&gt;&lt;br&gt;
+很漂亮的个人博客！ ^b2t9zp&lt;br&gt;
+（其实不是博客，应该算是一种少数派 Alter 的工具资讯站）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_20-07-10.png&#34;
+	width=&#34;1433&#34;
+	height=&#34;1272&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;404&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;112&#34;
+		data-flex-basis=&#34;270px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;重要的是这个页面不仅好看而且实用！&lt;br&gt;
+提到了 Shortcuts 快捷指令的使用，以及「填充边框」这样来避免版透明色带来的体积问题。&lt;/p&gt;
+&lt;h3 id=&#34;snipaste-里如何实现呢&#34;&gt;Snipaste 里如何实现呢？&lt;/h3&gt;
+&lt;p&gt;在截图的这里，点击，更改成圆角（快捷键 &lt;code&gt;U&lt;/code&gt; ）：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_17-59-56.png&#34;
+	width=&#34;696&#34;
+	height=&#34;428&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;然后工具栏这里，勾选阴影：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-00-41.png&#34;
+	width=&#34;696&#34;
+	height=&#34;428&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;注意还有一点&#34;&gt;注意：还有一点！&lt;/h3&gt;
+&lt;p&gt;设置里最好勾选这个「复制图像为文件」：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-01-46.png&#34;
+	width=&#34;511&#34;
+	height=&#34;256&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;199&#34;
+		data-flex-basis=&#34;479px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;不然直接作为图片格式可能会变成下面这个丑模样：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226180036.png&#34;
+	width=&#34;696&#34;
+	height=&#34;428&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;162&#34;
+		data-flex-basis=&#34;390px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;大概是因为透明通道的问题&lt;/em&gt;&lt;/p&gt;
+&lt;h4 id=&#34;副作用粘贴进-obsidian-的文件命名&#34;&gt;副作用：粘贴进 Obsidian 的文件命名&lt;/h4&gt;
+&lt;p&gt;由于是文件，所以粘贴进 Ob 的时候命名会是文件名：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226195001.png&#34;
+	width=&#34;503&#34;
+	height=&#34;407&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;123&#34;
+		data-flex-basis=&#34;296px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;——也就是说，这时候 Snipaste 的命名配置就会有用了！&lt;/p&gt;
+&lt;h3 id=&#34;自动化一点呢&#34;&gt;自动化一点呢？&lt;/h3&gt;
+&lt;p&gt;现在可以用 &lt;code&gt;U&lt;/code&gt; 快速切换圆角，但是阴影选项还要手动切换，有点麻烦。&lt;br&gt;
+包括&lt;strong&gt;复制为文件&lt;/strong&gt;也要用 &lt;code&gt;Ctrl+Alt+C&lt;/code&gt; 来完成。&lt;/p&gt;
+&lt;p&gt;能更方便吗？&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://docs.snipaste.com/zh-cn/command-line-options&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;命令行选项 - Snipaste&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;结合 &lt;strong&gt;&lt;code&gt;--shadow&lt;/code&gt;&lt;/strong&gt; 获取带阴影截图；结合 &lt;strong&gt;&lt;code&gt;--no-shadow&lt;/code&gt;&lt;/strong&gt; 获取不带阴影截图。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这样的话，可以用命令行截图来&lt;strong&gt;强制带阴影&lt;/strong&gt;，第二部也搞定。&lt;/p&gt;
+&lt;p&gt;如： &lt;code&gt;snip -o file-dialog;clipboard&lt;/code&gt; 会在截屏选区确定后自动复制截图，并弹出文件保存对话框。&lt;/p&gt;
+&lt;p&gt;那我们可以：&lt;br&gt;
+&lt;code&gt;snip --shadow -o clipboard&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;然后在这里进行自定义：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-13-01.png&#34;
+	width=&#34;1140&#34;
+	height=&#34;569&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;200&#34;
+		data-flex-basis=&#34;480px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;效果：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Pasted-image-20231226181329.png&#34;
+	width=&#34;370&#34;
+	height=&#34;260&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;142&#34;
+		data-flex-basis=&#34;341px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;Nahh 不行，阴影会加上，但不是作为文件保存的。&lt;br&gt;
+是不是可以用 &lt;code&gt;-o exec&lt;/code&gt; 来保存文件并复制？&lt;br&gt;
+或者就干脆把 &lt;a class=&#34;link&#34; href=&#34;#%e6%b3%a8%e6%84%8f%ef%bc%9a%e8%bf%98%e6%9c%89%e4%b8%80%e7%82%b9%ef%bc%81&#34; &gt;注意：还有一点！&lt;/a&gt; 里的设置变成默认开好叻。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-15-42.png&#34;
+	width=&#34;587&#34;
+	height=&#34;401&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;OK，这样可以咯。&lt;/p&gt;
+&lt;p&gt;分配了一个快捷键：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E4%BD%BF%E7%94%A8-snipaste-%E6%88%AA%E5%87%BA%E5%9C%86%E8%A7%92%E7%9F%A9%E5%BD%A2%E5%B8%A6%E9%98%B4%E5%BD%B1%E7%9A%84%E6%88%AA%E5%9B%BE/Assets/Snipaste_2023-12-26_18-16-03.png&#34;
+	width=&#34;511&#34;
+	height=&#34;537&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;95&#34;
+		data-flex-basis=&#34;228px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;这样常态是普通的截图（直角矩形无阴影），用这个特殊的「带截图阴影」则是截取美观截图（圆角矩形带阴影）。&lt;/p&gt;
+&lt;p&gt;Finish！&lt;/p&gt;
+&lt;p&gt;🤔 可惜直角矩形和圆角矩形的切换好像还不能在命令行和里……&lt;br&gt;
+这个倒是因为有快捷键可以配合 QK 自动化；或者也可以提 FR 试试。&lt;/p&gt;
+&lt;p&gt;主要是频率可能不高，就先这样吧，到此为止！&lt;/p&gt;
+&lt;p&gt;（总之还是提了个 Issue： &lt;a class=&#34;link&#34; href=&#34;https://github.com/Snipaste/feedback/issues/2810&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;[FR] 命令行添加参数：指定圆角矩形截图、作为文件输出 · Issue #2810 · Snipaste/feedback&lt;/a&gt; ）&lt;/p&gt;
+&lt;p&gt;#EOF&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>网易云的音乐封面歌词获取（更新）</title>
+        <link>https://demo.stack.jimmycai.com/p/%E7%BD%91%E6%98%93%E4%BA%91%E7%9A%84%E9%9F%B3%E4%B9%90%E5%B0%81%E9%9D%A2%E6%AD%8C%E8%AF%8D%E8%8E%B7%E5%8F%96%E6%9B%B4%E6%96%B0/</link>
+        <pubDate>Tue, 17 Oct 2023 16:18:00 +0000</pubDate>
+        
+        <guid>https://demo.stack.jimmycai.com/p/%E7%BD%91%E6%98%93%E4%BA%91%E7%9A%84%E9%9F%B3%E4%B9%90%E5%B0%81%E9%9D%A2%E6%AD%8C%E8%AF%8D%E8%8E%B7%E5%8F%96%E6%9B%B4%E6%96%B0/</guid>
+        <description>&lt;h1 id=&#34;网易云的音乐封面歌词获取更新&#34;&gt;网易云的音乐封面歌词获取（更新）&lt;/h1&gt;
+&lt;h2 id=&#34;起因&#34;&gt;起因&lt;/h2&gt;
+&lt;p&gt;之前的两个动作不生效了，重新想办法。&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E7%BD%91%E6%98%93%E4%BA%91%E7%9A%84%E9%9F%B3%E4%B9%90%E5%B0%81%E9%9D%A2%E6%AD%8C%E8%AF%8D%E8%8E%B7%E5%8F%96%E6%9B%B4%E6%96%B0/Assets/Pasted-image-20231017161042.png&#34;
+	width=&#34;385&#34;
+	height=&#34;154&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;250&#34;
+		data-flex-basis=&#34;600px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;封面&#34;&gt;封面&lt;/h2&gt;
+&lt;p&gt;改成直接读取 &lt;meta&gt; 元素了：&lt;/p&gt;
+&lt;p&gt;用音乐的原链接打开 HTML，然后提取 XPATH：&lt;br&gt;
+&lt;code&gt;/html/head/meta[@property=&amp;quot;og:image&amp;quot;]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;顺便，在浏览器其实可以 F12 然后右键，复制 XPATH：&lt;br&gt;
+&lt;img src=&#34;https://demo.stack.jimmycai.com/p/%E7%BD%91%E6%98%93%E4%BA%91%E7%9A%84%E9%9F%B3%E4%B9%90%E5%B0%81%E9%9D%A2%E6%AD%8C%E8%AF%8D%E8%8E%B7%E5%8F%96%E6%9B%B4%E6%96%B0/Assets/Pasted-image-20231017161437.png&#34;
+	width=&#34;390&#34;
+	height=&#34;490&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;79&#34;
+		data-flex-basis=&#34;191px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;歌词&#34;&gt;歌词&lt;/h2&gt;
+&lt;p&gt;暂时没找到怎么办……&lt;br&gt;
+直接用了一个第三方的 API 服务：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://neteasecloudmusicapi.vercel.app/#/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网易云音乐 NodeJS 版 API&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;虽然 NodeJs 啥的好像很麻烦，但是这个部署好了的 Vercel 站点是直接可以用的；&lt;br&gt;
+比如查歌词就是：&lt;br&gt;
+&lt;code&gt;api.music.areschang.top/lyric?id=1501530173&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;更多内容见文档：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://neteasecloudmusicapi.vercel.app/#/?id=neteasecloudmusicapi&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;网易云音乐 NodeJS 版 API 文档&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;回头可以再研究一下，反正是开源的。&lt;br&gt;
+Github 库也 Fork 过来了。&lt;/p&gt;
+&lt;h2 id=&#34;easyspider&#34;&gt;EasySpider&lt;/h2&gt;
+&lt;p&gt;这个简单试了一下，有点麻烦，没搞明白……下次再说！&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://www.easyspider.net/download.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;易采集EasySpider下载地址&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
